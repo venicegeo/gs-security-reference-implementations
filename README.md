@@ -1,2 +1,2 @@
-# gs-security-reference-implementations
-Reference implementations for common security solutions.
+# Security Reference Implementations
+Reference implementations for common security solutions, such as JWT or GxIS authentication.
