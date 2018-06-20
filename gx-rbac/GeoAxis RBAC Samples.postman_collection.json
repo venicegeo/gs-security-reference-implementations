@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "94f0c649-62db-4aac-b6e4-bae277900a84",
+		"name": "GeoAxis RBAC Samples",
+		"description": "Sample requests for GeoAxis RBAC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/SearchUsers?serviceAgency=NGA&firstName=John",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"SearchUsers"
+					],
+					"query": [
+						{
+							"key": "serviceAgency",
+							"value": "NGA"
+						},
+						{
+							"key": "firstName",
+							"value": "John"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ListRoles",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ListRoles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Role Members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ListRoleMembers?consumer=GEOAxIS&roleName=ROLE_NAME",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ListRoleMembers"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "roleName",
+							"value": "ROLE_NAME"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Role (with Users)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/AddRole?consumer=GEOAxIS&roleName=NewRole&description=RoleDescription&uniqueMembers=USERGUID1,USERGUID2",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"AddRole"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "roleName",
+							"value": "NewRole"
+						},
+						{
+							"key": "description",
+							"value": "RoleDescription"
+						},
+						{
+							"key": "uniqueMembers",
+							"value": "USERGUID1,USERGUID2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Users to Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ems/AddRoleMembers?consumer=GEOAxIS&roleName=THE_ROLE&uniqueMembers=USERGUID1,USERGUID2",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ems",
+						"AddRoleMembers"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "roleName",
+							"value": "THE_ROLE"
+						},
+						{
+							"key": "uniqueMembers",
+							"value": "USERGUID1,USERGUID2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Users from Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ems/DeleteRoleMembers?consumer=GEOAxIS&roleName=THE_ROLE&uniqueMembers=USERGUID1,USERGUID2",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ems",
+						"DeleteRoleMembers"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "roleName",
+							"value": "THE_ROLE"
+						},
+						{
+							"key": "uniqueMembers",
+							"value": "USERGUID1,USERGUID2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ListGroups",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ListGroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Group Members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ListGroupMembers?consumer=GEOAxIS&groupName=Administrators",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ListGroupMembers"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "groupName",
+							"value": "Administrators"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Group (with Users)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/AddGroup?consumer=GEOAxIS&groupName=NewGroup&description=GroupDescription&uniqueMembers=USERGUID1,USERGUID2",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"AddGroup"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "groupName",
+							"value": "NewGroup"
+						},
+						{
+							"key": "description",
+							"value": "GroupDescription"
+						},
+						{
+							"key": "uniqueMembers",
+							"value": "USERGUID1,USERGUID2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Users to Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://gxisapi.gxaccess.com/ems/ems/AddGroupMembers?consumer=GEOAxIS&groupName=THE_GROUP&uniqueMembers=USERGUID1,USERGUID2",
+					"protocol": "https",
+					"host": [
+						"gxisapi",
+						"gxaccess",
+						"com"
+					],
+					"path": [
+						"ems",
+						"ems",
+						"AddGroupMembers"
+					],
+					"query": [
+						{
+							"key": "consumer",
+							"value": "GEOAxIS"
+						},
+						{
+							"key": "groupName",
+							"value": "THE_GROUP"
+						},
+						{
+							"key": "uniqueMembers",
+							"value": "USERGUID1,USERGUID2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
